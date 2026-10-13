@@ -1,0 +1,5 @@
+# Permitimos que todos los buscadores rastreen la web
+User-agent: *
+Allow: /
+
+Sitemap: https://mycurrencyexchange.com/sitemap.xml

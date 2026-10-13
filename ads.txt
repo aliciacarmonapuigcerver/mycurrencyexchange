@@ -1,0 +1,17 @@
+# =====================================================================
+# ads.txt — archivo de autorización de anuncios (lo exige Google AdSense)
+#
+# CUÁNDO RELLENARLO: cuando AdSense apruebe tu web (o cuando te lo pida
+# durante la solicitud).
+#
+# QUÉ HACER: borra la línea de ejemplo de abajo (la que empieza por "#")
+# y escribe esta línea SIN la almohadilla, cambiando los números por tu
+# ID de editor (lo ves en AdSense > Cuenta > Información de la cuenta):
+#
+#   google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+#
+# "f08c47fec0942fa0" es el identificador fijo de Google: no lo cambies.
+# Puedes copiar la línea exacta desde AdSense > Sitios > ads.txt.
+# =====================================================================
+
+# google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

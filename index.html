@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Currency Exchange · Conversor de monedas · Currency converter</title>
+<meta name="description" content="Conversor de monedas por país en español e inglés. Currency converter by country in Spanish and English.">
+<meta name="robots" content="noindex, follow">
+<link rel="alternate" hreflang="es" href="https://mycurrencyexchange.com/es/">
+<link rel="alternate" hreflang="en" href="https://mycurrencyexchange.com/en/">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<script>
+  /* Elige el idioma: 1) el que la persona eligió antes, 2) el de su navegador */
+  (function () {
+    var lang = null;
+    try { lang = localStorage.getItem("mce_lang"); } catch (e) {}
+    if (lang !== "es" && lang !== "en") {
+      var list = navigator.languages || [navigator.language || "en"];
+      lang = "en";
+      for (var i = 0; i < list.length; i++) {
+        var l = String(list[i]).slice(0, 2).toLowerCase();
+        if (l === "es" || l === "en") { lang = l; break; }
+      }
+    }
+    var page = location.protocol === "file:" ? "/index.html" : "/";
+    location.replace(lang + page + location.search);
+  })();
+</script>
+<style>
+  body { font-family: system-ui, sans-serif; display: grid; place-items: center; min-height: 100vh; margin: 0; background: #f6f7f9; color: #14202b; }
+  a { display: inline-block; margin: .5rem; padding: .8rem 1.4rem; border-radius: 10px; background: #0b6e5f; color: #fff; text-decoration: none; font-weight: 600; }
+</style>
+</head>
+<body>
+<main>
+  <h1>My Currency Exchange</h1>
+  <p><a href="es/" hreflang="es" lang="es">Español</a><a href="en/" hreflang="en" lang="en">English</a></p>
+</main>
+</body>
+</html>
